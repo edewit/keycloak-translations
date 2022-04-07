@@ -1,6 +1,7 @@
 export default {
   users: {
     title: "Users",
+    usersExplain: "Placeholder for users explanation.",
     searchForUser: "Search user",
     startBySearchingAUser: "Start by searching for users",
     searchForUserDescription:
@@ -9,6 +10,8 @@ export default {
     createNewUser: "Create new user",
     noUsersFound: "No users found",
     noUsersFoundError: "No users found due to {{error}}",
+    noUsersFoundErrorStorage:
+      "No users found, could be due to wrongly configured federated provider {{error}}",
     noGroups: "No groups",
     noGroupsText:
       "You haven't added this user to any groups. Join a group to get started.",
@@ -110,6 +113,9 @@ export default {
     deleteGrantsSuccess: "Grants successfully revoked.",
     deleteGrantsError: "Error deleting grants.",
     roleMapping: "Role mapping",
+    noRoles: "No roles for this user",
+    noRolesInstructions:
+      "You haven't assigned any roles to this user. Assign a role to get started.",
     unlockAllUsers: "Unlock all users",
     unlockUsersConfirm:
       "All the users that are temporarily locked will be unlocked.",
@@ -120,24 +126,23 @@ export default {
     noCredentialsText:
       "This user does not have any credentials. You can set password for this user.",
     setPassword: "Set password",
-    setPasswordFor: "Set password for ",
+    setPasswordFor: "Set password for {{username}}",
+    defaultPasswordLabel: "My password",
     save: "Save",
     cancel: "Cancel",
     savePasswordSuccess: "The password has been set successfully.",
     savePasswordError: "Error saving password: {{error}}",
-    savePasswordNotMatchError:
-      "Error saving password: Password and confirmation does not match.",
+    confirmPasswordDoesNotMatch: "Password and confirmation does not match.",
     credentialType: "Type",
     credentialUserLabel: "User Label",
     credentialData: "Data",
     credentialsList: "Credentials List",
     setPasswordConfirm: "Set password?",
     setPasswordConfirmText:
-      "Are you sure you want to set the password for the user",
+      "Are you sure you want to set the password for the user {{username}}?",
     password: "Password",
     passwordConfirmation: "Password confirmation",
     resetPasswordConfirmation: "New password confirmation",
-    questionMark: "?",
     savePassword: "Save password",
     deleteCredentialsConfirmTitle: "Delete credentials?",
     deleteCredentialsConfirm:
@@ -145,15 +150,17 @@ export default {
     deleteCredentialsSuccess: "The credentials has been deleted successfully.",
     deleteCredentialsError: "Error deleting users credentials: {{error}}",
     deleteBtn: "Delete",
-    resetPasswordFor: "Reset password for ",
+    updatedCredentialMoveSuccess:
+      "User Credential configuration has been saved",
+    updatedCredentialMoveError:
+      "User Credential configuration hasn't been saved",
+    resetPasswordFor: "Reset password for {{username}}",
     resetPasswordConfirm: "Reset password?",
     resetPasswordConfirmText:
-      "Are you sure you want to reset the password for the user",
+      "Are you sure you want to reset the password for the user {{username}}?",
     resetPassword: "Reset password",
     resetCredentialsSuccess: "The password has been reset successfully.",
     resetCredentialsError: "Error resetting users credentials: {{error}}",
-    resetPasswordNotMatchError:
-      "Error resetting password: Password and confirmation does not match.",
     resetPasswordError: "Error resetting password: {{error}}",
     resetPasswordBtn: "Reset password",
     showPasswordDataName: "Name",
@@ -169,5 +176,21 @@ export default {
     updateCredentialUserLabelSuccess:
       "The user label has been changed successfully.",
     updateCredentialUserLabelError: "Error changing user label: {{error}}",
+    credentialReset: "Credentials Reset",
+    credentialResetBtn: "Credential Reset",
+    resetActions: "Reset Actions",
+    lifespan: "Expires In",
+    VERIFY_EMAIL: "Verify Email (VERIFY_EMAIL)",
+    UPDATE_PASSWORD: "Update password (UPDATE_PASSWORD)",
+    UPDATE_PROFILE: "Update Profile (UPDATE_PROFILE)",
+    CONFIGURE_TOTP: "Configure OTP (CONFIGURE_TOTP)",
+    terms_and_conditions: "Terms and Conditions (terms_and_conditions)",
+    hours: "Hours",
+    minutes: "Minutes",
+    seconds: "Seconds",
+    credentialResetConfirm: "Send Email",
+    credentialResetConfirmText: "Are you sure you want to send email to user",
+    credentialResetEmailSuccess: "Email sent to user.",
+    credentialResetEmailError: "Failed: {{error}}",
   },
 };

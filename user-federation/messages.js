@@ -3,13 +3,12 @@ export default {
     userFederation: "User federation",
     descriptionLanding:
       "This is the description for the user federation landing page",
-    userFederationExplanation:
+    userFederationExplain:
       "Keycloak can federate external user databases. Out of the box we have support for LDAP and Active Directory.",
     getStarted: "To get started, select a provider from the list below.",
     providers: "Add providers",
-    addKerberos: "Add Kerberos providers",
-    addLdap: "Add LDAP providers",
-    addOneLdap: "Add LDAP provider",
+    addProvider_one: "Add {{provider}} provider",
+    addProvider_other: "Add {{provider}} providers",
     addKerberosWizardTitle: "Add Kerberos user federation provider",
     addLdapWizardTitle: "Add LDAP user federation provider",
 
@@ -65,6 +64,7 @@ export default {
     evictionHour: "Eviction hour",
     evictionMinute: "Eviction minute",
     maxLifespan: "Max lifespan",
+    ms: "milliseconds",
 
     advancedSettings: "Advanced settings",
     enableLdapv3Password:
@@ -96,7 +96,17 @@ export default {
       "Error when trying to connect to LDAP. See server.log for details. {{error}}",
 
     learnMore: "Learn more",
+    managePriorities: "Manage priorities",
+    managePriorityOrder: "Manage priority order",
+    managePriorityInfo:
+      "Priority is the order of providers when doing a user lookup. You can drag the row handlers to change the priorities.",
+    orderChangeSuccess:
+      "Successfully changed the priority order of user federation providers",
+    orderChangeError:
+      "Could not change the priority order of user federation providers {{error}}",
     addNewProvider: "Add new provider",
+    addCustomProvider: "Add custom provider",
+    providerDetails: "Provider details",
     userFedDeletedSuccess: "The user federation provider has been deleted.",
     userFedDeleteError:
       "Could not delete user federation provider: '{{error}}'",
