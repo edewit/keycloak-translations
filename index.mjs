@@ -122,7 +122,8 @@ const supportedLocales = [
   "pl",
   "pt_BR",
   "ru",
-  "zh_CN"];
+  "zh_CN"
+];
 
 const save = (locale, namespace, result) => {
   try {
@@ -150,7 +151,7 @@ for (const locale of supportedLocales) {
     const lookup = Object.keys(table);
     for (let index = 0; index < lookup.length; index++) {
       const key = lookup[index];
-      const oldKey = adminMessageValueLookupKeys.find(e => e === key);
+      const oldKey = adminMessageValueLookup[adminMessageValueLookupKeys.find(e => e === key)];
       const translated = localMessages[oldKey];
       if (oldKey && translated) {
         _.set(result, table[key][0], translated);
